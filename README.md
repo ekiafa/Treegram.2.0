@@ -3,7 +3,7 @@
 <h3>v.1.0</h3>
 
 
-Project for Internet Technologies in > <strong>CSE,Uoi</strong> for improve basic project to a better more functional situation with more features.
+Project for Internet Technologies in <strong>CSE,Uoi</strong>[https://www.cs.uoi.gr/] for improve basic project to a better more functional situation with more features.
 
 > Ruby on Rails 
 
