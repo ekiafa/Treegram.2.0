@@ -1,24 +1,41 @@
-# Treegram.2.0
+Treegram
 
-<h3>v.1.0</h3>
+(modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)
 
+==============
 
-Project for Internet Technologies course in [CSE,Uoi](https://www.cs.uoi.gr/) for improving basic project to a better more functional situation with more features.
+A simple ruby on rails app. Allows a user to create an account with username, password, and avatar. After login user can upload photos to their account and tag other users in the photos.
 
-> Ruby on Rails 
+Installation and Usage
+------------
+Run Postrges Sever
 
+Clone or download this repository and cd into indent directory
 
+```
+$ rake db:create
+$ rake db:migrate
+$ rails server
+```
 
-<h3>v.2.0</h3>
+In your browser visit localhost:3000
 
-<h4>Added features:</h4>
+Motivation
+--------
+> **To Practice:**
+>- Ruby On Rails project setup
+>- User authentication
+>- Paperclip gem for uploading files
+>- SASS 
+>- Unit testing with RSPEC
+>- Integration testing with CAPYBARA
 
+Authors
+------
 
-<ul>
-<li>Comments</li>
-<li>Titles</li>
-<li>Followers</li>
-<li>Following users</li>
-<li>Show following people photos</li>  
-<li>Delete photo with comments and tags </li>
-</ul> 
+Kathryn Carr, J Sivakumaran, and Lizzie Koehler
+
+License
+-------
+
+MIT license
