@@ -3,7 +3,13 @@ Treegram 2.0
 <h3>Added features:</h3>
 
 <ul>
-  <li>Comments</li
+  <li>Comments</li>
+  <li>Photo Titles </li>
+  <li>Followers </li>
+  <li>Following users </li>
+  <li>Delete photos</li>
+  <li>Show in dashboads photos of following users</li>
+</ul>
     
 
 
@@ -13,7 +19,7 @@ Treegram 2.0
 
 Treegram
 
-(modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)
+(modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, [Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)](https://www.cs.uoi.gr/)
 
 ==============
 
