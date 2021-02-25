@@ -1,0 +1,98 @@
+.row.top_row
+  .col-sm-6.user_att
+    %h2= @user.email
+    - if @user.avatar_file_name
+      = image_tag @user.avatar.url(:thumb)
+      %h1
+      = link_to 'Follow' , new_user_follower_path(@user) ,class: ['btn', 'btn-success', 'add_follow_btn','btn-lg'] # allagh
+  .col-sm-6
+    = link_to 'Logout', log_out_path, class: ['btn', 'btn-danger', 'logout_btn']
+  .row
+    = link_to 'Add Photo', new_user_photo_path(@user), class: ['btn', 'btn-success', 'add_photo_btn']
+    
+
+ 
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+
+    
+.row
+
+
+  %h1 Your Photos
+  - @user.photos.each  do |photo|
+     
+    .well.col-sm-4
+      %h3 Title:  #{photo.title} 
+      = button_to 'Delete',delete_photo_path(@user, photo), :method => :delete, :confirm => 'Are you sure?'
+      %h2
+      = image_tag photo.image.url(:medium)
+      = form_for @tag do |f|
+        = f.hidden_field :photo_id, value: photo.id
+        = f.collection_select :user_id, @users, :id, :email
+        = f.submit "Tag User"
+      %p Tags:
+      - photo.tags.each do |tag|
+        = tag.user.email
+      %h2
+
+      %h5 Comment:
+      = form_for @comment do |c|
+        = c.collection_select :user_id, @users, :id, :email
+        %h2
+        = c.hidden_field :photo_id, value: photo.id
+        = c.text_area :comment
+        = c.submit "Post" 
+
+      %h3 Comments:       
+      -photo.comments.each do |comment|
+        =comment.user.email + " ::"
+        =comment.comment 
+        %p
+.row
+
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/        
+  %h2 Friends Photos
+  -@photos.each do |d|
+    .well.col-sm-6
+      - if @user.followers.pluck(:follower_id).include?(d.user_id)
+        
+
+        %h3 Title:  #{d.title} 
+        = image_tag d.image.url(:medium)
+
+        %p Tags:
+        - d.tags.each do |tag|
+          = tag.user.email
+        %h2
+
+        %h5 Comment:
+        = form_for @comment do |c|
+          = c.collection_select :user_id, @users, :id, :email
+          %h2
+          = c.hidden_field :photo_id, value: d.id
+          = c.text_area :comment
+          = c.submit "Post" 
+
+        %h3 Comments:       
+        -d.comments.each do |comment|
+          =comment.user.email + " ::"
+          =comment.comment 
+        %p
+ 
+      
+      
