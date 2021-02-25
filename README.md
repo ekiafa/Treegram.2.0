@@ -12,16 +12,16 @@
 </ul>
     
 
+(modified by Eftihia Kiafa)
 
 
-
-
+=================================================
 
 # Treegram 1.0
 
 (modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, [Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)](https://www.cs.uoi.gr/)
 
-==============
+=================================================
 
 A simple ruby on rails app. Allows a user to create an account with username, password, and avatar. After login user can upload photos to their account and tag other users in the photos.
 
