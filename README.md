@@ -1,4 +1,4 @@
-# Treegram
+# Treegram.2.0
 
 <h3>v.1.0</h3>
 
