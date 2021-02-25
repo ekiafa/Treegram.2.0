@@ -7,14 +7,18 @@ Project for Internet Technologies in CSE,Uoi for improve basic project to a bett
 
 Ruby on Rails 
 
-Added features:
-
-#v.2.0
 
 
--Comments
--Titles
--Following users
--Followers 
--Show following people photos
--Delete photo with comments and tags 
+<h3>v.2.0</h3>
+
+<h4>Added features:</h4>
+
+
+<ul>
+<li>Comments</li>
+<li>Titles</li>
+<li>Followers</li>
+<li>Following users</li>
+<li>Show following people photos</li>  
+<li>Delete photo with comments and tags </li>
+</ul> 
