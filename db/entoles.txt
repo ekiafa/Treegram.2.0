@@ -1,0 +1,15 @@
+gia na perasoyme to title ston pinaka photos
+rails generate migration add_title_to_Photos title:string
+
+gia na meinei h allagh
+rake db:migrate
+
+gia dhmioyrgia toy pinaka comment 
+
+rails generate migration Comment 
+
+tropopoihsh toy arxeiou comment gia na mpoyn ta pedia kai meta pali 
+
+rake db:migrate
+
+oi allages epivevwthikan me to schema
